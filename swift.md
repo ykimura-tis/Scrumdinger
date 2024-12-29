@@ -178,25 +178,38 @@ struct ScrumdingerApp: App {
 ## Creating a navigation hierarchy
 https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy
 
-![width:800](Scrumdinger/01.png)
+Set up navigation
+In ScrumsView.swift, embed the List in a NavigationStack.
+Add a NavigationLink, passing Text(scrum.title) as the destination in the initializer.
+Add a toolbar, and add a Button toolbar item that displays the plus icon. Pass an empty action to the button for now.
+
+![width:800](Scrumdinger/09.png)
 
 
 ---
+Create the detail view
 
-![width:800](Scrumdinger/01.png)
-
-
----
-
-![width:800](Scrumdinger/01.png)
+![width:800](Scrumdinger/10.png)
 
 
 ---
+Iterate through attendees
+In DailyScrum.swift, create an extension with an inner structure named Attendee that is identifiable.
+In DetailView.swift, create a Section with a header of "Attendees" to group the attendee information.
 
-![width:800](Scrumdinger/01.png)
+![width:800](Scrumdinger/11.png)
 
 
 ---
+Navigate between screens
+Wrap the Start Meeting Label with a NavigationLink that sets MeetingView as the destination.
+
+![width:800](Scrumdinger/12.png)
+
+
+---
+## Managing data flow between views
+https://developer.apple.com/tutorials/app-dev-training/managing-data-flow-between-views
 
 ![width:800](Scrumdinger/01.png)
 

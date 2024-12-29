@@ -147,6 +147,46 @@ Next, you’ll create a label style to stack the scrum length and clock icon hor
 ---
 ## Displaying data in a list
 https://developer.apple.com/tutorials/app-dev-training/displaying-data-in-a-list
+you’ll dynamically generate rows from an array of DailyScrum objects
+
+![width:800](Scrumdinger/07.png)
+
+
+---
+Open DailyScrum.swift, and declare conformance to the Identifiable protocol.
+
+![width:800](Scrumdinger/08.png)
+
+
+---
+Open ScrumdingerApp.swift, and set ScrumsView as the initial view for the app.
+
+```
+@main
+struct ScrumdingerApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ScrumsView(scrums: DailyScrum.sampleData)
+        }
+    }
+}
+```
+
+
+---
+# Navigation and modal presentation
+## Creating a navigation hierarchy
+https://developer.apple.com/tutorials/app-dev-training/creating-a-navigation-hierarchy
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
 
 ![width:800](Scrumdinger/01.png)
 

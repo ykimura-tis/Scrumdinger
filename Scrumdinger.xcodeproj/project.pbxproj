@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		EEFF21942D20E7160051E0D1 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Scrumdinger.app; path = "/Users/kimmkimm/BackUp/Github/iOS/AppDevTutorials/Scrumdinger/build/Debug-iphoneos/Scrumdinger.app"; sourceTree = "<absolute>"; };
+		EECB89CB2D2134720044FB56 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,6 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				EEFF21B62D2100660051E0D1 /* Scrumdinger */,
+				EECB89CB2D2134720044FB56 /* Scrumdinger.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +59,7 @@
 			packageProductDependencies = (
 			);
 			productName = Scrumdinger;
-			productReference = EEFF21942D20E7160051E0D1 /* Scrumdinger.app */;
+			productReference = EECB89CB2D2134720044FB56 /* Scrumdinger.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

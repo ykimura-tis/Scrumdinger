@@ -211,6 +211,39 @@ Wrap the Start Meeting Label with a NavigationLink that sets MeetingView as the 
 ## Managing data flow between views
 https://developer.apple.com/tutorials/app-dev-training/managing-data-flow-between-views
 
+
+---
+## Creating the edit view
+https://developer.apple.com/tutorials/app-dev-training/creating-the-edit-view
+
+Add a @State property named scrum that represents the scrum you’re editing. Initialize the new property with an empty scrum.
+
+![width:800](Scrumdinger/13.png)
+
+
+---
+Display attendees in the edit view
+
+![width:800](Scrumdinger/14.png)
+
+
+---
+Present the edit view
+When isPresentingEditView changes to true, the app presents DetailEditView using a modal sheet that partially covers the underlying content.
+
+![width:800](Scrumdinger/15.png)
+
+
+---
+# Passing data
+## Passing data with bindings
+https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
 ![width:800](Scrumdinger/01.png)
 
 

@@ -327,6 +327,43 @@ Trigger sound with AVFoundation
 ## Updating app data
 https://developer.apple.com/tutorials/app-dev-training/updating-app-data
 
+Use the edit view to create a new scrum
+
+![width:800](Scrumdinger/26.png)
+
+
+---
+Add scrum history
+In MeetingView.swift, create a History, and insert it into scrum.history.
+
+![width:800](Scrumdinger/27.png)
+
+
+---
+# Persistence and concurrency
+## Persisting data
+https://developer.apple.com/tutorials/app-dev-training/persisting-data
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
 ![width:800](Scrumdinger/01.png)
 
 

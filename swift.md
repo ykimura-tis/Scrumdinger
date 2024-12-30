@@ -268,16 +268,64 @@ In ScrumdingerApp.swift, add a private @State property named scrums.
 
 
 ---
+廃棄したか確認
+https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings
 
-![width:800](Scrumdinger/01.png)
+勉強
+https://developer.apple.com/tutorials/app-dev-training/making-classes-observable
+https://developer.apple.com/tutorials/app-dev-training/responding-to-events
+
+
+
+# State management
+## Managing state and life cycle
+
+https://developer.apple.com/tutorials/app-dev-training/managing-state-and-life-cycle
+Create an overlay view
+Start by adding some visual polish to the meeting timer screen.
+
+![width:800](Scrumdinger/20.png)
 
 
 ---
+Extract the meeting header
+In this section, you’ll extract the meeting header into its own view, create properties to pass a meeting’s elapsed and remaining time, and update the logic of the progress view and accessibility labels.
 
-![width:800](Scrumdinger/01.png)
+![width:800](Scrumdinger/21.png)
 
 
 ---
+Add a state object for a source of truth
+Add a call to the meeting header subview that uses scrumTimer to provide the secondsElapsed and secondsRemaining arguments.
+
+![width:800](Scrumdinger/22.png)
+
+
+---
+Add life cycle events
+Add an onAppear modifier, and call scrumTimer.reset, passing in the length in minutes and attendees.
+Add an onDisappear modifier, and call scrumTimer.stopScrum().
+
+![width:800](Scrumdinger/23.png)
+
+
+---
+Extract the meeting footer
+Create a new SwiftUI View file named MeetingFooterView.swift, and extract the HStack from MeetingView.swift to the MeetingFooterView body.
+In MeetingView.swift, add a call to the MeetingFooterView, passing speakers and the skip action.
+
+![width:800](Scrumdinger/24.png)
+
+
+---
+Trigger sound with AVFoundation
+
+![width:800](Scrumdinger/25.png)
+
+
+---
+## Updating app data
+https://developer.apple.com/tutorials/app-dev-training/updating-app-data
 
 ![width:800](Scrumdinger/01.png)
 

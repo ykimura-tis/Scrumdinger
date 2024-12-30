@@ -239,6 +239,46 @@ When isPresentingEditView changes to true, the app presents DetailEditView using
 ## Passing data with bindings
 https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings
 
+Add a theme view
+
+![width:800](Scrumdinger/16.png)
+
+
+---
+Add a theme picker
+
+![width:800](Scrumdinger/17.png)
+
+
+---
+Pass the edit view a binding to data
+In DetailEditView.swift, add a theme picker, and pass it a binding to a theme.
+
+![width:800](Scrumdinger/18.png)
+
+
+---
+Pass a binding into the detail view
+In ScrumsView.swift, convert the scrums constant to a binding.
+
+Pass a binding into the list view
+In ScrumdingerApp.swift, add a private @State property named scrums.
+
+![width:800](Scrumdinger/19.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
+![width:800](Scrumdinger/01.png)
+
+
+---
+
 ![width:800](Scrumdinger/01.png)
 
 

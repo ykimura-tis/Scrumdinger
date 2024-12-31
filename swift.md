@@ -109,14 +109,14 @@ https://developer.apple.com/tutorials/app-dev-training/using-stacks-to-arrange-v
 In this section, you’ll build the header of the timer screen to display the elapsed time and remaining time of a meeting.
 You’ll use the progress view to display the percentage of time elapsed during the scrum.
 
-![width:800](Scrumdinger/01.png)
-![width:800](Scrumdinger/02.png)
+![width:800](01.png)
+![width:800](02.png)
 
 
 ---
 you’ll create a placeholder for the circular timer view that appears in the center of the screen.
 
-![width:800](Scrumdinger/03.png)
+![width:800](03.png)
 
 
 ---
@@ -126,13 +126,13 @@ https://developer.apple.com/tutorials/app-dev-training/creating-a-card-view
 
 Create a color theme
 
-![width:800](Scrumdinger/04.png)
+![width:800](04.png)
 
 
 ---
 Create a daily scrum model
 
-![width:800](Scrumdinger/05.png)
+![width:800](05.png)
 
 
 ---
@@ -141,7 +141,7 @@ CardView will summarize the DailyScrum model data and display the title, the num
 you’ll style the card to highlight the most important information, and you’ll modify the visual components to ensure adequate contrast between text and background views in light and dark appearances.
 Next, you’ll create a label style to stack the scrum length and clock icon horizontally. With the LabelStyle protocol, you can create a consistent design throughout your app by reusing the same label style for several views.
 
-![width:800](Scrumdinger/06.png)
+![width:800](06.png)
 
 
 ---
@@ -149,13 +149,13 @@ Next, you’ll create a label style to stack the scrum length and clock icon hor
 https://developer.apple.com/tutorials/app-dev-training/displaying-data-in-a-list
 you’ll dynamically generate rows from an array of DailyScrum objects
 
-![width:800](Scrumdinger/07.png)
+![width:800](07.png)
 
 
 ---
 Open DailyScrum.swift, and declare conformance to the Identifiable protocol.
 
-![width:800](Scrumdinger/08.png)
+![width:800](08.png)
 
 
 ---
@@ -183,13 +183,13 @@ In ScrumsView.swift, embed the List in a NavigationStack.
 Add a NavigationLink, passing Text(scrum.title) as the destination in the initializer.
 Add a toolbar, and add a Button toolbar item that displays the plus icon. Pass an empty action to the button for now.
 
-![width:800](Scrumdinger/09.png)
+![width:800](09.png)
 
 
 ---
 Create the detail view
 
-![width:800](Scrumdinger/10.png)
+![width:800](10.png)
 
 
 ---
@@ -197,14 +197,14 @@ Iterate through attendees
 In DailyScrum.swift, create an extension with an inner structure named Attendee that is identifiable.
 In DetailView.swift, create a Section with a header of "Attendees" to group the attendee information.
 
-![width:800](Scrumdinger/11.png)
+![width:800](11.png)
 
 
 ---
 Navigate between screens
 Wrap the Start Meeting Label with a NavigationLink that sets MeetingView as the destination.
 
-![width:800](Scrumdinger/12.png)
+![width:800](12.png)
 
 
 ---
@@ -218,20 +218,20 @@ https://developer.apple.com/tutorials/app-dev-training/creating-the-edit-view
 
 Add a @State property named scrum that represents the scrum you’re editing. Initialize the new property with an empty scrum.
 
-![width:800](Scrumdinger/13.png)
+![width:800](13.png)
 
 
 ---
 Display attendees in the edit view
 
-![width:800](Scrumdinger/14.png)
+![width:800](14.png)
 
 
 ---
 Present the edit view
 When isPresentingEditView changes to true, the app presents DetailEditView using a modal sheet that partially covers the underlying content.
 
-![width:800](Scrumdinger/15.png)
+![width:800](15.png)
 
 
 ---
@@ -241,20 +241,20 @@ https://developer.apple.com/tutorials/app-dev-training/passing-data-with-binding
 
 Add a theme view
 
-![width:800](Scrumdinger/16.png)
+![width:800](16.png)
 
 
 ---
 Add a theme picker
 
-![width:800](Scrumdinger/17.png)
+![width:800](17.png)
 
 
 ---
 Pass the edit view a binding to data
 In DetailEditView.swift, add a theme picker, and pass it a binding to a theme.
 
-![width:800](Scrumdinger/18.png)
+![width:800](18.png)
 
 
 ---
@@ -264,41 +264,33 @@ In ScrumsView.swift, convert the scrums constant to a binding.
 Pass a binding into the list view
 In ScrumdingerApp.swift, add a private @State property named scrums.
 
-![width:800](Scrumdinger/19.png)
+![width:800](19.png)
 
 
 ---
-廃棄したか確認
-https://developer.apple.com/tutorials/app-dev-training/passing-data-with-bindings
-
-勉強
+# State management
 https://developer.apple.com/tutorials/app-dev-training/making-classes-observable
 https://developer.apple.com/tutorials/app-dev-training/responding-to-events
-
-
-
-# State management
 ## Managing state and life cycle
-
 https://developer.apple.com/tutorials/app-dev-training/managing-state-and-life-cycle
 Create an overlay view
 Start by adding some visual polish to the meeting timer screen.
 
-![width:800](Scrumdinger/20.png)
+![width:800](20.png)
 
 
 ---
 Extract the meeting header
 In this section, you’ll extract the meeting header into its own view, create properties to pass a meeting’s elapsed and remaining time, and update the logic of the progress view and accessibility labels.
 
-![width:800](Scrumdinger/21.png)
+![width:800](21.png)
 
 
 ---
 Add a state object for a source of truth
 Add a call to the meeting header subview that uses scrumTimer to provide the secondsElapsed and secondsRemaining arguments.
 
-![width:800](Scrumdinger/22.png)
+![width:800](22.png)
 
 
 ---
@@ -306,7 +298,7 @@ Add life cycle events
 Add an onAppear modifier, and call scrumTimer.reset, passing in the length in minutes and attendees.
 Add an onDisappear modifier, and call scrumTimer.stopScrum().
 
-![width:800](Scrumdinger/23.png)
+![width:800](23.png)
 
 
 ---
@@ -314,13 +306,13 @@ Extract the meeting footer
 Create a new SwiftUI View file named MeetingFooterView.swift, and extract the HStack from MeetingView.swift to the MeetingFooterView body.
 In MeetingView.swift, add a call to the MeetingFooterView, passing speakers and the skip action.
 
-![width:800](Scrumdinger/24.png)
+![width:800](24.png)
 
 
 ---
 Trigger sound with AVFoundation
 
-![width:800](Scrumdinger/25.png)
+![width:800](25.png)
 
 
 ---
@@ -329,14 +321,14 @@ https://developer.apple.com/tutorials/app-dev-training/updating-app-data
 
 Use the edit view to create a new scrum
 
-![width:800](Scrumdinger/26.png)
+![width:800](26.png)
 
 
 ---
 Add scrum history
 In MeetingView.swift, create a History, and insert it into scrum.history.
 
-![width:800](Scrumdinger/27.png)
+![width:800](27.png)
 
 
 ---
@@ -344,37 +336,50 @@ In MeetingView.swift, create a History, and insert it into scrum.history.
 ## Persisting data
 https://developer.apple.com/tutorials/app-dev-training/persisting-data
 
-![width:800](Scrumdinger/01.png)
+Add codable conformance
+Codable is a type alias that combines the Encodable and Decodable protocols. When you implement these protocols on your types, you can use the Codable API to easily serialize data to and from JSON.
+
+![width:800](28.png)
+
+
+---
+Create a data store
+An ObservableObject includes an objectWillChange publisher that emits when one of its @Published properties is about to change. Any view observing an instance of ScrumStore will render again when the scrums value changes.
+Add a method to load data
+In this section, you’ll add a method to read JSON data from the scrums.data file and decode the data to an array of daily scrums.
+Add a method to save data
+
+![width:800](29.png)
+
+
+---
+Load data on app launch
+Use a do-catch statement to load the saved scrum or halt execution if load() throws an error.
+
+![width:800](30.png)
+
+
+---
+Save data in inactive state
+Call saveAction() if the scene is moving to the inactive phase.
+In ScrumdingerApp.swift, add a trailing closure to the ScrumsView initializer, and create an empty Task inside.
+
+![width:800](31.png)
 
 
 ---
 
-![width:800](Scrumdinger/01.png)
+![width:800](01.png)
 
 
 ---
 
-![width:800](Scrumdinger/01.png)
+![width:800](01.png)
 
 
 ---
 
-![width:800](Scrumdinger/01.png)
-
-
----
-
-![width:800](Scrumdinger/01.png)
-
-
----
-
-![width:800](Scrumdinger/01.png)
-
-
----
-
-![width:800](Scrumdinger/01.png)
+![width:800](01.png)
 
 
 ---

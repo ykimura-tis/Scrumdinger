@@ -368,11 +368,35 @@ In ScrumdingerApp.swift, add a trailing closure to the ScrumsView initializer, a
 
 
 ---
+## Adopting new API features
+https://developer.apple.com/tutorials/app-dev-training/adopting-new-api-features
+## Handling errors
+https://developer.apple.com/tutorials/app-dev-training/handling-errors
+
+Add an error wrapper structure
+Create an error view
+
+![width:800](32.png)
+
+
+---
+Report errors
+In ScrumdingerApp.swift, add an optional state variable named errorWrapper.
+
+![width:800](33.png)
+
+
+---
+Simulate data corruption
+xcrun simctl get_app_container booted name.yukitoshi.Scrumdinger data
 
 ![width:800](01.png)
 
 
 ---
+# Drawing
+## Drawing the timer view
+https://developer.apple.com/tutorials/app-dev-training/drawing-the-timer-view
 
 ![width:800](01.png)
 

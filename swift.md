@@ -388,15 +388,51 @@ In ScrumdingerApp.swift, add an optional state variable named errorWrapper.
 
 ---
 Simulate data corruption
-xcrun simctl get_app_container booted name.yukitoshi.Scrumdinger data
-
-![width:800](01.png)
+`xcrun simctl get_app_container booted name.yukitoshi.Scrumdinger data`
 
 
 ---
 # Drawing
 ## Drawing the timer view
 https://developer.apple.com/tutorials/app-dev-training/drawing-the-timer-view
+
+Create the meeting timer view
+you’ll create MeetingTimerView, which builds upon the circle to present a visualization of meeting progress and the current speaker’s name.
+
+![width:800](34.png)
+
+
+---
+Draw an arc segment
+In this section, you’ll create a single arc segment that traces a portion of a circle, representing one speaker’s time.
+Draw the progress ring
+The stroke modifier traces a line along the path of the shape.
+
+![width:800](35.png)
+![width:800](36.png)
+
+
+---
+# Recording audio
+## Examining data flow in Scrumdinger
+https://developer.apple.com/tutorials/app-dev-training/examining-data-flow-in-scrumdinger
+## Transcribing speech to text
+https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text
+
+![width:800](01.png)
+
+
+---
+
+![width:800](01.png)
+
+
+---
+
+![width:800](01.png)
+
+
+---
 
 ![width:800](01.png)
 

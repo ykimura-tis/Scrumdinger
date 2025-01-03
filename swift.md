@@ -419,27 +419,44 @@ https://developer.apple.com/tutorials/app-dev-training/examining-data-flow-in-sc
 ## Transcribing speech to text
 https://developer.apple.com/tutorials/app-dev-training/transcribing-speech-to-text
 
-![width:800](01.png)
+![width:800](37.png)
+![width:800](38.png)
 
 
 ---
+Integrate speech recognition
 
-![width:800](01.png)
-
-
----
-
-![width:800](01.png)
+![width:800](39.png)
 
 
 ---
+Display recording indicators
 
-![width:800](01.png)
+![width:800](40.png)
 
 
 ---
+Create a history view
 
-![width:800](01.png)
+![width:800](41.png)
+
+
+---
+Display a history view
+
+![width:800](42.png)
+
+
+---
+---
+# UIKit essentials
+## Getting started with Today
+https://developer.apple.com/tutorials/app-dev-training/getting-started-with-today
+## Creating a list view
+https://developer.apple.com/tutorials/app-dev-training/creating-a-list-view
+
+
+![width:800](../Today/01.png)
 
 
 ---
